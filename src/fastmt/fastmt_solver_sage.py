@@ -9,8 +9,9 @@ import time
 
 from fastmt import MT19937
 import numpy
+import os
 
-load("fill_matrix.spyx")
+load(os.path.join(os.path.dirname(__file__),"fill_matrix.spyx"))
 
 class MT19937Solver:
     def __init__(self):
